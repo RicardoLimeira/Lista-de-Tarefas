@@ -1,0 +1,73 @@
+
+/* Definições de variáveis */
+:root {
+    --green: #00FF00;
+    --white: #ffffff;
+    --black: #000000;
+    --bg-light: var(--green);
+    --fontColor-light: var(--black);
+    --bg-dark: var(--black);
+    --fontColor-dark: var(--green);
+    --btnBg-light: var(--black);
+    --btnFontColor-light: var(--white);
+    --btnBg-dark: var(--white);
+    --btnFontColor-dark: var(--black);
+}
+
+/* Estilo global */
+* {
+    color: var(--fontColor);
+    font-family: helvetica;
+}
+
+/* Estilo do corpo */
+body {
+    font-family: monospace;
+    background: var(--bg);
+}
+
+/* Estilo de listas */
+ul {
+    font-family: helvetica;
+}
+
+li {
+    list-style: circle;
+}
+
+.list {
+    list-style: square;
+}
+
+/* Estilo do botão */
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+
+.btn:focus {
+    outline-style: none;
+}
+
+/* Tema claro */
+.light-theme {
+    --bg: var(--bg-light);
+    --fontColor: var(--fontColor-light);
+    --btnBg: var(--btnBg-light);
+    --btnFontColor: var(--btnFontColor-light);
+}
+
+/* Tema escuro */
+.dark-theme {
+    --bg: var(--bg-dark);
+    --fontColor: var(--fontColor-dark);
+    --btnBg: var(--btnBg-dark);
+    --btnFontColor: var(--btnFontColor-dark);
+}
